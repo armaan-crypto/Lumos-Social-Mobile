@@ -8,12 +8,6 @@
 import SwiftUI
 
 struct PostView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-struct PostView: View {
-    
     @State var post: Post
     
     var body: some View {
@@ -29,8 +23,7 @@ struct PostView: View {
                 VStack {
                     HStack {
                         NavigationLink {
-                            // TODO: Replace with the "My Profile" Screen passing through post.user
-                            ContentView()
+                            ProfileView(user: post.user)
                         } label: {
                             Text(post.user.name)
                                 .fontWeight(.bold)
@@ -63,6 +56,6 @@ struct PostView: View {
     }
 }
 
-#Preview {
-    PostView()
-}
+//#Preview {
+//    PostView(post: Post(user: User, text: <#T##String#>))
+//}
