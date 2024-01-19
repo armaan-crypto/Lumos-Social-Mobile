@@ -1,5 +1,5 @@
-# Lumos Social (App)
+# Lumos Social (app)
+Social media platform
 
-Social media platform for students.
 
-By viewing this repository, you agree not to distribute this code to any third party without the express permission of the owner.
+This repository is depreciated -- use https://github.com/Lumos-Team/App instead
